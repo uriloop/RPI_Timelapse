@@ -1,0 +1,7 @@
+#create a copy of crontab file without desired line
+crontab -l | grep -v -w $FOLDER > cron.example
+#install the new cron file to crontab
+crontab cron.example
+# delete example file
+rm cron.example
+rm -r $FOLDER/conf

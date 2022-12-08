@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# number of arguments
+NUMARG="$#"
+
+if [ $NUMARG -eq 1 ] ; then
+	case $1 in
+		"-s")
+			sh /opt/RPI_TimelapseCreator/timelapse.sh -s
+		;;
+		"-u")
+			sh /opt/RPI_TimelapseCreator/timelapse.sh -u
+		;;
+		"-n")
+			sh /opt/RPI_TimelapseCreator/timelapse.sh -n
+		;;
+		*)
+			echo "-n = new timelapse"
+			echo "-s = stop timelapse"
+			echo "-u = uninstall timelapse"
+			echo "-h = this help"
+	esac
+elif [ $NUMARG -lt 1 ] || [ $NUMARG -gt 1 ] ; then
+	echo "-n = new timelapse"
+	echo "-s = stop timelapse"
+	echo "-u = uninstall timelapse"
+	echo "-h = this help"
+fi

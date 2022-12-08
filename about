@@ -1,0 +1,12 @@
+
+  ###############################
+  ##  TIMELAPSE RASPBERRY APP  ##
+  ############################### by: uriloop
+
+
+ App to simplify the timelapse projects 
+ with raspberry and rpi camera module.
+
+ To install "sudo sh install.sh"
+ To execute "timelapse"
+ For help "timelapse --help"
